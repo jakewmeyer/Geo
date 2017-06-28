@@ -37,7 +37,14 @@ wan_search() {
 
 # Fetches current LAN ip address
 lan_search() {
+  if [ "$(uname)" = "Darwin" ]; then
     ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'
+  elif [ "$(uname -s)" = "Linux" ]; then
+    ip addr show | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'
+  else
+    echo "OS not supported"
+    exit 1
+  fi
 }
 
 # Fetches Router ip address
@@ -66,7 +73,14 @@ dns_search() {
 
 # Fetches MAC address of
 mac_search() {
-  ifconfig "$MAC" | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}'
+  if [ "$(uname)" = "Darwin" ]; then
+    ifconfig "$MAC" | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}'
+  elif [ "$(uname -s)" = "Linux" ]; then
+    ip addr show "$MAC" | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}' | grep -v ff:
+  else
+    echo "OS not supported"
+    exit 1
+  fi
 }
 
 # Fetches current geodata based on ip

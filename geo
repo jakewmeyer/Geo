@@ -54,7 +54,7 @@ router_search() {
 
 # Fetches DNS nameserver
 dns_search() {
-  cat /etc/resolv.conf |grep -i nameserver|head -n1|cut -d ' ' -f2
+  cat /etc/resolv.conf | grep -i nameserver | cut -d ' ' -f2
 }
 
 # Fetches MAC address of

@@ -14,7 +14,9 @@
 
 ## Install / Setup
 * Uses **no** dependencies
+
 * Install curls install.sh and runs it
+
 **MacOS/Linux**
 ```bash
 curl -sSL https://git.io/vQcAR | sh

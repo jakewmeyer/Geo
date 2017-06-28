@@ -20,9 +20,9 @@
 curl -sSL https://git.io/vQcAR | sh
 ```
 ```bash
-=> geo -r
+=> geo -w
 
-=> 192.168.1.12
+=> 12.23.56.78
 ```
 
 **Tested in Bash, Zsh, Fish, Sh, and Csh**

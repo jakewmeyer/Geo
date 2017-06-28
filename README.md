@@ -19,7 +19,7 @@
 
 **MacOS/Linux**
 ```bash
-curl -sSL https://git.io/vQcAR | sh
+curl -fsSL https://git.io/vQcAR | sh
 ```
 ```bash
 => ./geo -w

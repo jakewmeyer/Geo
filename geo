@@ -55,6 +55,8 @@ router_search() {
 # Fetches DNS nameserver
 dns_search() {
   grep -i nameserver /etc/resolv.conf |head -n1|cut -d ' ' -f2
+  
+  cat /etc/resolv.conf | grep -i ^nameserver | cut -d ' ' -f2
 }
 
 # Fetches MAC address of
@@ -64,7 +66,7 @@ mac_search() {
 
 # Fetches current geodata based on ip
 geodata_search() {
-  curl -s "http://ip-api.com/line/?fields=query,city,region,country,zip,isp"
+  curl -sf "http://ip-api.com/line/?fields=query,city,region,country,zip,isp"
 }
 
 # Fetches specific geodata based on args
@@ -72,7 +74,7 @@ specific_geo() {
   if [ "$OPTIONS" = "all" ]; then
     curl -s "http://ip-api.com/line/${ADDRESS}?fields=query,city,region,country,zip,isp"
   else
-    curl -s "http://ip-api.com/line/${ADDRESS}?fields=${OPTIONS}"
+    curl -sf "http://ip-api.com/line/${ADDRESS}?fields=${OPTIONS}"
   fi
 }
 

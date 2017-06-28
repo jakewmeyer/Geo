@@ -3,7 +3,7 @@
 ![Imgur](http://i.imgur.com/Jk3L3EO.png)
 
 # Geo
-### A simple Bash utility for wan, lan, router, dns, mac, and ip geolocation data, with clean output for piping
+### A simple Bash utility for wan, lan, router, dns, mac, and ip geodata, with clean output for piping
 
 [![GitHub release](https://img.shields.io/github/release/jakewmeyer/Geo.svg)]()
 [![Language](https://img.shields.io/badge/language-Bash-gray.svg)]()

@@ -13,11 +13,11 @@
 </div>
 
 ## Install:
-MacOS =>
+**MacOS**
 ```bash
 brew install geo
 ```
-Debian =>
+**Debian**
 ```bash
 sudo apt-get install geo
 ```

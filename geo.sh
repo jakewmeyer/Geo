@@ -8,7 +8,7 @@
 
 # Parse arguments passed + help formatting
 usage() {
-    echo "Usage: netgeo [flag]"
+    echo "Usage: geo [flag]"
     echo "  -w  Returns WAN IP"
     echo "  -l  Returns LAN IP(s)"
     echo "  -r  Returns Router IP"

@@ -14,6 +14,7 @@
 
 ## Install:
 * Uses no dependencies
+
 **MacOS/Linux**
 ```bash
 curl -sSL https://git.io/vQcAR | sh

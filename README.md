@@ -3,7 +3,7 @@
 ![Imgur](http://i.imgur.com/Jk3L3EO.png)
 
 # Geo
-### A Network data utility with clean output for piping
+### A Network data utility with clean output for piping in pure Bash
 
 [![GitHub release](https://img.shields.io/github/release/jakewmeyer/Geo.svg)]()
 [![Language](https://img.shields.io/badge/language-Bash-gray.svg)]()
@@ -13,7 +13,8 @@
 </div>
 
 ## Install:
-**MacOS**
+* Uses no dependencies
+**MacOS/Linux**
 ```bash
 curl -sSL https://git.io/vQcAR | sh
 ```
@@ -22,6 +23,8 @@ curl -sSL https://git.io/vQcAR | sh
 
 => 192.168.1.12
 ```
+
+**Tested in Bash, Zsh, Fish, Sh, and Csh**
 ## Usage:
 
 ![Imgur](http://i.imgur.com/mvCaCfy.png)

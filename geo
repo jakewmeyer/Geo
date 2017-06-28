@@ -17,7 +17,7 @@ usage() {
     echo "  -g  Returns Current IP Geodata"
     echo "Custom Geo Output =>"
     echo "[all] [query] [city] [region] [country] [zip] [isp]"
-    echo "Example: netgeo -a 8.8.8.8 -o city,zip,isp"
+    echo "Example: geo -a 8.8.8.8 -o city,zip,isp"
     echo "  -o  [options] Returns Specific Geodata"
     echo "  -a  [address] For specific ip in -s"
     echo "  -v  Returns Version"

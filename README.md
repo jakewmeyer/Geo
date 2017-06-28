@@ -15,7 +15,7 @@
 ## Install / Setup
 * Uses **no** dependencies
 
-* Install curls install.sh and runs it
+* Install curls ```install.sh``` and runs it
 
 **MacOS/Linux**
 ```bash

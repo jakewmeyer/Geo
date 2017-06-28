@@ -20,7 +20,7 @@
 curl -sSL https://git.io/vQcAR | sh
 ```
 ```bash
-=> geo -w
+=> ./geo -w
 
 => 12.23.56.78
 ```

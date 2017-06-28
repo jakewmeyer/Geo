@@ -28,7 +28,7 @@ curl -sSL https://git.io/vQcAR | sh
 **Tested in Bash, Zsh, Fish, Sh, and Csh**
 ## Usage
 
-![Imgur](http://i.imgur.com/mvCaCfy.png)
+![Imgur](http://i.imgur.com/PdMSk8w.png)
 
 ## Performance
 **Original [netgeo](https://github.com/jakewmeyer/Ruby-Scripts) script written in Ruby vs new ```geo``` util written in Bash**

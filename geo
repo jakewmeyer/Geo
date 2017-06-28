@@ -61,7 +61,7 @@ router_search() {
 
 # Fetches DNS nameserver
 dns_search() {
-  scutil --dns | grep nameserver | head -1 | awk '{print$3}'
+  cat /etc/resolv.conf |grep -i nameserver|head -n1|cut -d ' ' -f2
 }
 
 # Fetches MAC address of

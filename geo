@@ -102,6 +102,7 @@ do
     esac
 done
 
+# Makes geo command default to help screen for usability
 if [ $# -eq 0 ];
 then
     usage

@@ -15,11 +15,7 @@
 ## Install:
 **MacOS**
 ```bash
-brew install geo
-```
-**Debian**
-```bash
-sudo apt-get install geo
+
 ```
 ## Usage:
 

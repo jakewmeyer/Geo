@@ -27,7 +27,7 @@ usage() {
 
 # Displays version number
 version() {
-  echo "Version 0.1.4";
+  echo "Version 0.1.5";
 }
 
 # Fetches WAN ip address

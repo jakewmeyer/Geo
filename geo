@@ -42,9 +42,9 @@ lan_search() {
 
 # Fetches Router ip address
 router_search() {
-  if [ "$(uname)" == "Darwin" ]; then
+  if [ "$(uname)" = "Darwin" ]; then
     netstat -rn | grep default | head -1 | awk '{print$2}'
-  elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+  elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
     ip route | grep default | head -1 | awk '{print$3}'
   else
     echo "OS not supported"
@@ -54,12 +54,14 @@ router_search() {
 
 # Fetches DNS nameserver
 dns_search() {
+  grep -i nameserver /etc/resolv.conf |head -n1|cut -d ' ' -f2
+  
   cat /etc/resolv.conf | grep -i ^nameserver | cut -d ' ' -f2
 }
 
 # Fetches MAC address of
 mac_search() {
-  ifconfig $MAC | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}'
+  ifconfig "$MAC" | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}'
 }
 
 # Fetches current geodata based on ip
@@ -69,8 +71,8 @@ geodata_search() {
 
 # Fetches specific geodata based on args
 specific_geo() {
-  if [ $OPTIONS == "all" ]; then
-    curl -sf "http://ip-api.com/line/${ADDRESS}?fields=query,city,region,country,zip,isp"
+  if [ "$OPTIONS" = "all" ]; then
+    curl -s "http://ip-api.com/line/${ADDRESS}?fields=query,city,region,country,zip,isp"
   else
     curl -sf "http://ip-api.com/line/${ADDRESS}?fields=${OPTIONS}"
   fi

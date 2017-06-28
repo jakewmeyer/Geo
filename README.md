@@ -31,9 +31,8 @@ curl -sSL https://git.io/vQcAR | sh
 ![Imgur](http://i.imgur.com/mvCaCfy.png)
 
 ## Performance
-**Execution time in seconds**
-
 **Original [netgeo](https://github.com/jakewmeyer/Ruby-Scripts) script written in Ruby vs new ```geo``` cmd written in Bash**
 
+**Execution time in seconds**
 
 ![Imgur](http://i.imgur.com/aAtNFel.png)

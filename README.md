@@ -12,7 +12,7 @@
 
 </div>
 
-## Install:
+## Install / Setup
 * Uses no dependencies
 
 **MacOS/Linux**
@@ -26,7 +26,7 @@ curl -sSL https://git.io/vQcAR | sh
 ```
 
 **Tested in Bash, Zsh, Fish, Sh, and Csh**
-## Usage:
+## Usage
 
 ![Imgur](http://i.imgur.com/mvCaCfy.png)
 
@@ -36,3 +36,8 @@ curl -sSL https://git.io/vQcAR | sh
 **Execution time in seconds => a 1349.06% improvement** :ok_hand: :chart_with_upwards_trend:
 
 ![Imgur](http://i.imgur.com/aAtNFel.png)
+
+## FAQ's / Contact
+* If you run into any issues, please open an issue ASAP and I'll work to get it resolved and merged.
+* Terminal used is [Hyper.js](https://hyper.is/) -> Background Color: #292937
+* Using [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh), Robby Russell theme, [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), and [zsh_autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)

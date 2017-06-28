@@ -64,15 +64,15 @@ mac_search() {
 
 # Fetches current geodata based on ip
 geodata_search() {
-  curl -s "http://ip-api.com/line/?fields=query,city,region,country,zip,isp"
+  curl -sf "http://ip-api.com/line/?fields=query,city,region,country,zip,isp"
 }
 
 # Fetches specific geodata based on args
 specific_geo() {
   if [ $OPTIONS == "all" ]; then
-    curl -s "http://ip-api.com/line/${ADDRESS}?fields=query,city,region,country,zip,isp"
+    curl -sf "http://ip-api.com/line/${ADDRESS}?fields=query,city,region,country,zip,isp"
   else
-    curl -s "http://ip-api.com/line/${ADDRESS}?fields=${OPTIONS}"
+    curl -sf "http://ip-api.com/line/${ADDRESS}?fields=${OPTIONS}"
   fi
 }
 

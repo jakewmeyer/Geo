@@ -44,7 +44,7 @@ lan_search() {
 router_search() {
   if [ "$(uname)" = "Darwin" ]; then
     netstat -rn | grep default | head -1 | awk '{print$2}'
-  elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
+  elif [ "$(uname -s)" = "Linux" ]; then
     ip route | grep default | head -1 | awk '{print$3}'
   else
     echo "OS not supported"
@@ -56,7 +56,7 @@ router_search() {
 dns_search() {
   if [ "$(uname)" = "Darwin" ]; then
     grep -i nameserver /etc/resolv.conf |head -n1|cut -d ' ' -f2
-  elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
+  elif [ "$(uname -s)" = "Linux" ]; then
     cat /etc/resolv.conf | grep -i ^nameserver | cut -d ' ' -f2
   else
     echo "OS not supported"

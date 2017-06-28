@@ -54,9 +54,14 @@ router_search() {
 
 # Fetches DNS nameserver
 dns_search() {
-  grep -i nameserver /etc/resolv.conf |head -n1|cut -d ' ' -f2
-  
-  cat /etc/resolv.conf | grep -i ^nameserver | cut -d ' ' -f2
+  if [ "$(uname)" = "Darwin" ]; then
+    grep -i nameserver /etc/resolv.conf |head -n1|cut -d ' ' -f2
+  elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
+    cat /etc/resolv.conf | grep -i ^nameserver | cut -d ' ' -f2
+  else
+    echo "OS not supported"
+    exit 1
+  fi
 }
 
 # Fetches MAC address of

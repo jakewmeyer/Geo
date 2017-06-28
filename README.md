@@ -13,7 +13,7 @@
 </div>
 
 ## Install / Setup
-* Uses no dependencies
+* Uses **no** dependencies
 
 **MacOS/Linux**
 ```bash

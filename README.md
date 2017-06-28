@@ -1,7 +1,11 @@
 <div align="center">
 
-#Geo - A Network data utility with clean output for piping
+![Imgur](http://i.imgur.com/9zLZMKy.png)
 
-![Imgur](http://i.imgur.com/mvCaCfy.png)
+# Geo - A Network data utility with clean output for piping
 
 </div>
+
+## Usage:
+
+![Imgur](http://i.imgur.com/mvCaCfy.png)

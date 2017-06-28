@@ -33,6 +33,6 @@ curl -sSL https://git.io/vQcAR | sh
 ## Performance
 **Original [netgeo](https://github.com/jakewmeyer/Ruby-Scripts) script written in Ruby vs new ```geo``` util written in Bash**
 
-**Execution time in seconds => a 1349.06% improvement** :+1::skin-tone-2:
+**Execution time in seconds => a 1349.06% improvement** :ok_hand: :chart_with_upwards_trend:
 
 ![Imgur](http://i.imgur.com/aAtNFel.png)

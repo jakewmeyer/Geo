@@ -15,7 +15,12 @@
 ## Install:
 **MacOS**
 ```bash
+curl -sSL https://git.io/vQcAR | sh
+```
+```bash
+=> geo -r
 
+=> 192.168.1.12
 ```
 ## Usage:
 

@@ -15,12 +15,9 @@
 ## Install / Setup
 * Uses **no** dependencies
 
-* Install curls ```install.sh``` and runs it
-
 **MacOS/Linux**
-```bash
-curl -fsSL https://git.io/vQcAR | sh
-```
+* [https://github.com/jakewmeyer/Geo/archive/v0.1.7.tar.gz](https://github.com/jakewmeyer/Geo/archive/v0.1.7.tar.gz)
+
 ```bash
 => ./geo -w
 

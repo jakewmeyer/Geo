@@ -1,0 +1,10 @@
+engines:
+  shellcheck:
+    enabled: true
+  markdownlint:
+    enabled: true
+ratings:
+  paths:
+    - "geo"
+    - "**.md"
+    - "test/fixtures/**"

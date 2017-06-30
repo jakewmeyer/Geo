@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 #
-# Shell utility for getting specific network info
+# Bash utility for getting specific network info
 # Author: Jake Meyer
 # Github: https://github.com/jakewmeyer
 #

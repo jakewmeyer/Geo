@@ -24,7 +24,6 @@
 => 12.23.56.78
 ```
 
-**Tested in Bash, Zsh, Fish, Sh, and Csh**
 ## Usage
 
 ![Imgur](http://i.imgur.com/PdMSk8w.png)

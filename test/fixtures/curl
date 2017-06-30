@@ -1,0 +1,13 @@
+#!/bin/sh
+if [ "$*" = "-sf http://ip-api.com/line/?fields=query,city,region,country,zip,isp" ]; then
+  echo "United States
+NY
+New York
+10011
+Digital Ocean
+1.2.3.4"
+fi
+
+if [ "$*" = "-sf http://ip-api.com/line/8.8.8.8?fields=city" ]; then
+  echo "Mountain View"
+fi

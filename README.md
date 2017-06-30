@@ -16,7 +16,7 @@
 * Uses **no** dependencies
 
 **MacOS/Linux**
-* [https://github.com/jakewmeyer/Geo/archive/v0.1.8.tar.gz](https://github.com/jakewmeyer/Geo/archive/v0.1.8.tar.gz)
+* [https://github.com/jakewmeyer/Geo/archive/v0.1.9.tar.gz](https://github.com/jakewmeyer/Geo/archive/v0.1.9.tar.gz)
 
 ```bash
 => ./geo -w

@@ -27,7 +27,7 @@ usage() {
 
 # Displays version number
 version() {
-  echo "Version 0.1.5";
+  echo "Version 0.1.9";
 }
 
 # Fetches WAN ip address
@@ -47,8 +47,6 @@ lan_search() {
   fi
 }
 
-#
-# ^default via
 # Fetches Router ip address
 router_search() {
   if [ "$(uname)" = "Darwin" ]; then

@@ -47,12 +47,14 @@ lan_search() {
   fi
 }
 
+#
+# ^default via
 # Fetches Router ip address
 router_search() {
   if [ "$(uname)" = "Darwin" ]; then
     netstat -rn | grep default | head -1 | awk '{print$2}'
   elif [ "$(uname -s)" = "Linux" ]; then
-    ip route | grep default | head -1 | awk '{print$3}'
+    ip route | grep ^default'\s'via | head -1 | awk '{print$3}'
   else
     echo "OS not supported"
     exit 1

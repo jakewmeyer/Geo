@@ -35,6 +35,9 @@
 
 ![Imgur](http://i.imgur.com/aAtNFel.png)
 
+## Testing
+Install `bats` and execute `bats test/*`
+
 ## FAQ's / Contact
 * If you run into any issues, please open an issue ASAP and I'll work to get it resolved and merged.
 * Terminal used is [Hyper.js](https://hyper.is/) -> Background Color: #292937

@@ -20,7 +20,7 @@
 * [Dnsutils](https://packages.debian.org/jessie/dnsutils) is required for WAN search on Linux
 
 **MacOS/Linux**
-* [https://github.com/jakewmeyer/Geo/archive/v0.1.9.tar.gz](https://github.com/jakewmeyer/Geo/archive/v0.1.9.tar.gz)
+* [https://github.com/jakewmeyer/Geo/archive/v1.2.0.tar.gz](https://github.com/jakewmeyer/Geo/archive/v1.2.0.tar.gz)
 * An AUR package is available [here](https://aur.archlinux.org/packages/geo-bash/) for those on Arch Linux courtesy of [zethra](https://github.com/zethra)
 ```bash
 => ./geo -w

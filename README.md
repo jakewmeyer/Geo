@@ -7,7 +7,7 @@
 
 [![GitHub release](https://img.shields.io/github/release/jakewmeyer/Geo.svg)]()
 [![Build Status](https://travis-ci.org/jakewmeyer/Geo.svg?branch=master)](https://travis-ci.org/jakewmeyer/Geo)
-[![Test Coverage](https://codeclimate.com/github/codeclimate/codeclimate/badges/coverage.svg)](https://codeclimate.com/github/jakewmeyer/Geo/coverage)
+[![Code Climate](https://codeclimate.com/github/jakewmeyer/Geo/badges/gpa.svg)](https://codeclimate.com/github/jakewmeyer/Geo)
 [![Platform](https://img.shields.io/badge/platform-MacOS%20%2B%20Linux-blue.svg)]()
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 

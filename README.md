@@ -13,7 +13,10 @@
 </div>
 
 ## Install / Setup
-* Uses **no** dependencies
+
+#### Linux Dependanices
+
+* [Dnsutils](https://packages.debian.org/jessie/dnsutils) is required for WAN search on Linux
 
 **MacOS/Linux**
 * [https://github.com/jakewmeyer/Geo/archive/v0.1.9.tar.gz](https://github.com/jakewmeyer/Geo/archive/v0.1.9.tar.gz)

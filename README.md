@@ -1,6 +1,6 @@
 <div align="center">
 
-![Imgur](http://i.imgur.com/1BWNRi1.png)
+![Imgur](http://i.imgur.com/Jk3L3EO.png)
 
 # Geo
 ### A simple Bash utility for wan, lan, router, dns, mac, and ip geodata, with clean output for piping
@@ -30,7 +30,7 @@
 
 ## Usage
 
-![Imgur](http://i.imgur.com/PdMSk8w.png)
+![Imgur](http://i.imgur.com/1BWNRi1.png)
 
 ## Performance
 **Original [netgeo](https://github.com/jakewmeyer/Ruby-Scripts) script written in Ruby vs new ```geo``` util written in Bash**

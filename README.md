@@ -1,6 +1,6 @@
 <div align="center">
 
-![Imgur](http://i.imgur.com/Jk3L3EO.png)
+![Imgur](http://i.imgur.com/1BWNRi1.png)
 
 # Geo
 ### A simple Bash utility for wan, lan, router, dns, mac, and ip geodata, with clean output for piping

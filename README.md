@@ -45,6 +45,8 @@
 Install `bats` and execute `bats test/*`
 
 ## FAQ's / Contact
+
+
 * If you run into any issues, please open an issue ASAP and I'll work to get it resolved and merged.
 * Terminal used is [Hyper.js](https://hyper.is/) -> Background Color: #292937
 * Using [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh), Robby Russell theme, [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), and [zsh_autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)

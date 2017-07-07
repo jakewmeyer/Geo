@@ -41,6 +41,7 @@
 ![Imgur](http://i.imgur.com/aAtNFel.png)
 
 ## Testing
+
 Install `bats` and execute `bats test/*`
 
 ## FAQ's / Contact

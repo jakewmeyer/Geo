@@ -14,6 +14,7 @@
 </div>
 
 ## Install / Setup
+
 **Linux Dependanices**
 
 * [Dnsutils](https://packages.debian.org/jessie/dnsutils) is required for WAN search on Linux

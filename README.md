@@ -33,6 +33,7 @@
 ![Imgur](http://i.imgur.com/PdMSk8w.png)
 
 ## Performance
+
 **Original [netgeo](https://github.com/jakewmeyer/Ruby-Scripts) script written in Ruby vs new ```geo``` util written in Bash**
 
 **Execution time in seconds => a 1349.06% improvement** :ok_hand: :chart_with_upwards_trend:

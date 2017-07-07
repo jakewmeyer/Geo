@@ -30,7 +30,7 @@
 
 ## Usage
 
-![Imgur](http://i.imgur.com/PdMSk8w.png)
+![Imgur](http://i.imgur.com/1BWNRi1.png)
 
 ## Performance
 

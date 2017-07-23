@@ -1,5 +1,5 @@
 language: bash
-sudo: false
+sudo: true
 dist: trusty
 before_install:
   - sudo add-apt-repository ppa:duggan/bats --yes

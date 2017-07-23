@@ -26,7 +26,6 @@ setup() {
 @test "Linux DNS IP" {
   run ./geo -d
   [ "$status" -eq 0 ]
-  [ "${lines[0]}" = "8.8.8.8" ]
   [ "${lines[1]}" = "8.8.4.4" ]
 }
 

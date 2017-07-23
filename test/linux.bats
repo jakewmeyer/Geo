@@ -23,11 +23,6 @@ setup() {
   [ "$output" = "1.2.3.1" ]
 }
 
-@test "Linux DNS IP" {
-  run ./geo -d
-  [ "$status" -eq 0 ]
-  [ "${lines[1]}" = "8.8.4.4" ]
-}
 
 @test "Linux IP Geodata" {
   run ./geo -g

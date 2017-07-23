@@ -23,12 +23,6 @@ setup() {
   [ "$output" = "2.2.3.1" ]
 }
 
-@test "Darwin DNS IP" {
-  run ./geo -d
-  [ "$status" -eq 0 ]
-  [ "${lines[0]}" = "8.8.8.8" ]
-}
-
 @test "Darwin IP Geodata" {
   run ./geo -g
   [ "$status" -eq 0 ]

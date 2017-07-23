@@ -8,7 +8,7 @@ setup() {
 @test "Darwin WAN IP" {
   run ./geo -w
   [ "$status" -eq 0 ]
-  [ "$output" = "2.2.3.4" ]
+  [ "$output" = "1.2.3.6" ]
 }
 
 @test "Darwin LAN IP" {
@@ -21,6 +21,12 @@ setup() {
   run ./geo -r
   [ "$status" -eq 0 ]
   [ "$output" = "2.2.3.1" ]
+}
+
+@test "Darwin DNS IP" {
+  run ./geo -d
+  [ "$status" -eq 0 ]
+  [ "${lines[0]}" = "8.8.8.8" ]
 }
 
 @test "Darwin IP Geodata" {

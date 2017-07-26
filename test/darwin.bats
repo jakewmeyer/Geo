@@ -8,7 +8,7 @@ setup() {
 @test "Darwin WAN IP" {
   run ./geo -w
   [ "$status" -eq 0 ]
-  [ "$output" = "2.2.3.4" ]
+  [ "$output" = "1.2.3.6" ]
 }
 
 @test "Darwin LAN IP" {

@@ -1,5 +1,5 @@
 #!/bin/sh
 
 if [ "$*" = "+short myip.opendns.com @resolver1.opendns.com" ]; then
-  echo 2.2.3.4
+  echo 1.2.3.6
 fi

@@ -15,18 +15,16 @@
 
 ## Install / Setup
 
-**Linux Dependanices**
-
-* [Dnsutils](https://packages.debian.org/jessie/dnsutils) is required for WAN search on Linux
-
-**MacOS/Linux**
-* [https://github.com/jakewmeyer/Geo/archive/v1.2.0.tar.gz](https://github.com/jakewmeyer/Geo/archive/v1.2.0.tar.gz)
-* An AUR package is available [here](https://aur.archlinux.org/packages/geo-bash/) for those on Arch Linux courtesy of [zethra](https://github.com/zethra)
+**MacOS**
 ```bash
-=> ./geo -w
-
-=> 12.23.56.78
+brew install jakewmeyer/Geo/geo
 ```
+
+**Linux**
+* An AUR package is available [here](https://aur.archlinux.org/packages/geo-bash/) for those on Arch Linux courtesy of [zethra](https://github.com/zethra)
+
+**Linux Dependanices**
+* [Dnsutils](https://packages.debian.org/jessie/dnsutils) is required for WAN search on Linux
 
 ## Usage
 

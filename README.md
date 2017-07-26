@@ -21,6 +21,7 @@ brew install jakewmeyer/Geo/geo
 ```
 
 **Linux**
+* [https://github.com/jakewmeyer/Geo/archive/v1.2.0.tar.gz](https://github.com/jakewmeyer/Geo/archive/v1.2.0.tar.gz)
 * An AUR package is available [here](https://aur.archlinux.org/packages/geo-bash/) for those on Arch Linux courtesy of [zethra](https://github.com/zethra)
 
 **Linux Dependanices**

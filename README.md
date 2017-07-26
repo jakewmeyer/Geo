@@ -3,13 +3,12 @@
 ![Imgur](http://i.imgur.com/Jk3L3EO.png)
 
 # Geo
-### A simple Bash utility for wan, lan, router, dns, mac, and ip geodata, with clean output for piping
+### A Bash utility for easy wan, lan, router, dns, mac address, and geolocation output, with clean stdout for easy piping
 
 [![GitHub release](https://img.shields.io/github/release/jakewmeyer/Geo.svg)]()
 [![Build Status](https://travis-ci.org/jakewmeyer/Geo.svg?branch=master)](https://travis-ci.org/jakewmeyer/Geo)
 [![Code Climate](https://codeclimate.com/github/jakewmeyer/Geo/badges/gpa.svg)](https://codeclimate.com/github/jakewmeyer/Geo)
 [![Platform](https://img.shields.io/badge/platform-MacOS%20%2B%20Linux-blue.svg)]()
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 </div>
 
@@ -30,14 +29,6 @@ brew install jakewmeyer/Geo/geo
 ## Usage
 
 ![Imgur](http://i.imgur.com/1BWNRi1.png)
-
-## Performance
-
-**Original [netgeo](https://github.com/jakewmeyer/Ruby-Scripts) script written in Ruby vs new ```geo``` util written in Bash**
-
-**Execution time in seconds => a 1349.06% improvement** :ok_hand: :chart_with_upwards_trend:
-
-![Imgur](http://i.imgur.com/aAtNFel.png)
 
 ## Testing
 

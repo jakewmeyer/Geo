@@ -7,6 +7,8 @@ setup() {
 
 @test "Darwin WAN IP" {
   run ./geo -w
+  echo "status = ${status}"
+  echo "output = ${output}"
   [ "$status" -eq 0 ]
 }
 

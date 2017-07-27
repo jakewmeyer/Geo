@@ -1,0 +1,4 @@
+#!/bin/sh
+if [ "$*" = "-A curl -s https://api.ipify.org?format=json | grep -Eo "[0-9.]*" ]; then
+  echo "98.76.54.32"
+fi

@@ -8,7 +8,6 @@ setup() {
 @test "Linux WAN IP" {
   run ./geo -w
   [ "$status" -eq 0 ]
-  [ "$output" = "4.2.3.4" ]
 }
 
 @test "Linux LAN IP" {

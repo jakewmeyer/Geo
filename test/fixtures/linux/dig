@@ -1,5 +1,4 @@
 #!/bin/sh
-
-if [ "$*" = "+short myip.opendns.com @resolver1.opendns.com" ]; then
-  echo 4.2.3.4
+if [ "$*" = "-w" ]; then
+  echo "98.76.54.32"
 fi

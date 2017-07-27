@@ -37,9 +37,9 @@ wan_search() {
 
 # Fetches current LAN ip address
 lan_search() {
-  if [ "$(uname)" = "Darwin" ]; then
+  if [ $OS = "Darwin" ]; then
     ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'
-  elif [ "$(uname -s)" = "Linux" ]; then
+  elif [ $OS = "Linux" ]; then
     ip addr show | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'
   else
     echo "OS not supported"
@@ -49,9 +49,9 @@ lan_search() {
 
 # Fetches Router ip address
 router_search() {
-  if [ "$(uname)" = "Darwin" ]; then
+  if [ $OS = "Darwin" ]; then
     netstat -rn | grep default | head -1 | awk '{print$2}'
-  elif [ "$(uname -s)" = "Linux" ]; then
+  elif [ $OS = "Linux" ]; then
     ip route | grep ^default'\s'via | head -1 | awk '{print$3}'
   else
     echo "OS not supported"
@@ -61,9 +61,9 @@ router_search() {
 
 # Fetches DNS nameserver
 dns_search() {
-  if [ "$(uname)" = "Darwin" ]; then
+  if [ $OS = "Darwin" ]; then
     grep -i nameserver /etc/resolv.conf |head -n1|cut -d ' ' -f2
-  elif [ "$(uname -s)" = "Linux" ]; then
+  elif [ $OS = "Linux" ]; then
     cat /etc/resolv.conf | grep -i ^nameserver | cut -d ' ' -f2
   else
     echo "OS not supported"
@@ -73,9 +73,9 @@ dns_search() {
 
 # Fetches MAC address of
 mac_search() {
-  if [ "$(uname)" = "Darwin" ]; then
+  if [ $OS = "Darwin" ]; then
     ifconfig "$MAC" | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}'
-  elif [ "$(uname -s)" = "Linux" ]; then
+  elif [ $OS = "Linux" ]; then
     ip addr show "$MAC" | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}' | grep -v ff:
   else
     echo "OS not supported"
@@ -97,6 +97,9 @@ specific_geo() {
   fi
 }
 
+# Check OS type at beginning
+OS="`uname`"
+
 # Option parsing "controller"
 optspec="wlrdm:go:a:vh*:"
 while getopts "$optspec" optchar
@@ -116,7 +119,7 @@ do
     esac
 done
 
-# Makes geo command default to help screen for usability
+# Default to help screen for usability
 if [ $# -eq 0 ];
 then
     usage

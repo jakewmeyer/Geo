@@ -32,7 +32,7 @@ version() {
 
 # Fetches WAN ip address
 wan_search() {
-  curl -A curl -s https://api.ipify.org?format=json | grep -Eo "[0-9.]*"
+  curl ipv4.icanhazip.com
 }
 
 # Fetches current LAN ip address

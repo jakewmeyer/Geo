@@ -32,7 +32,7 @@ version() {
 
 # Fetches WAN ip address
 wan_search() {
-  dig +short myip.opendns.com @resolver1.opendns.com
+  curl -A curl -s https://api.ipify.org?format=json | grep -Eo "[0-9.]*"
 }
 
 # Fetches current LAN ip address

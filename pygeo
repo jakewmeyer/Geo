@@ -1,3 +1,13 @@
 #!/usr/bin/env python3
 
-print("Test!")
+from optparse import OptionParser
+...
+parser = OptionParser()
+parser.add_option("-w", "--wan", action="store_false", help="Returns WAN IP")
+parser.add_option("-l", "--lan", action="store_false", help="Returns LAN IP(s)")
+parser.add_option("-r", "--router", action="store_false", help="Returns Router IP")
+parser.add_option("-d", "--dns", action="store_false", help="Returns DNS Nameserver")  
+parser.add_option("-m", "--mac", action="store_false", help="Returns MAC address for interface. Ex. eth0")
+parser.add_option("-g", "--geo", action="store_false", default=True, help="Returns Current IP Geodata")
+
+(options, args) = parser.parse_args()

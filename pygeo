@@ -1,13 +1,25 @@
 #!/usr/bin/env python3
 
+#
+# Python utility for getting specific network info
+# Author: Jake Meyer
+# Github: https://github.com/jakewmeyer
+#
+
 from optparse import OptionParser
-...
-parser = OptionParser()
-parser.add_option("-w", "--wan", action="store_false", help="Returns WAN IP")
-parser.add_option("-l", "--lan", action="store_false", help="Returns LAN IP(s)")
-parser.add_option("-r", "--router", action="store_false", help="Returns Router IP")
-parser.add_option("-d", "--dns", action="store_false", help="Returns DNS Nameserver")  
-parser.add_option("-m", "--mac", action="store_false", help="Returns MAC address for interface. Ex. eth0")
-parser.add_option("-g", "--geo", action="store_false", default=True, help="Returns Current IP Geodata")
+
+desc="""Example: pygeo -a 8.8.8.8 -o city,zip,isp                                                               
+Options: [all] [query] [city] [region] [country] [zip] [isp]"""
+
+parser = OptionParser(usage='Usage: %prog [flag]', description=desc)
+parser.add_option("-w", "--wan", action="wan_search", help="Returns WAN IP")
+parser.add_option("-l", "--lan", action="lan_search", help="Returns LAN IP(s)")
+parser.add_option("-r", "--router", action="router_search", help="Returns Router IP")
+parser.add_option("-d", "--dns", action="dns_search", help="Returns DNS Nameserver")  
+parser.add_option("-m", "--mac", action="mac_search", help="Returns MAC address for interface. Ex. eth0")
+parser.add_option("-g", "--geo", action="geodata_search", default=True, help="Returns Current IP Geodata")
+parser.add_option("-o", "--option", action="specific_geo", default=True, help="[options] Returns Specific Geodata")
+parser.add_option("-a", "--address", action="store_false", default=True, help="[address] To specify IP for Geodata")
+parser.add_option("-v", "--version", action="store_false", default=True, help="Returns Version")
 
 (options, args) = parser.parse_args()

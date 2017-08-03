@@ -7,12 +7,14 @@
 import argparse
 
 parser = argparse.ArgumentParser(usage='pygeo -l => 10.6.5.23')
-parser.add_argument("-w","--wan", help="Returns WAN IP", metavar='')
-parser.add_argument("-l","--lan", help="Returns LAN IP(s)", metavar='')
-parser.add_argument("-r","--router", help="Returns Router IP", metavar='')
-parser.add_argument("-d","--dns", help="Returns DNS Nameserver", metavar='')  
-parser.add_argument("-m","--mac", help="Returns MAC address for interface. Ex. eth0", metavar='')
-parser.add_argument("-g","--geo", help="Returns Current IP Geodata", metavar='')
-parser.add_argument("-v","--version", help="Returns Version", metavar='')
+parser.add_argument("-w", "--wan", help="Returns WAN IP", metavar='')
+parser.add_argument("-l", "--lan", help="Returns LAN IP(s)", metavar='')
+parser.add_argument("-l6","--lan6", help="Returns IPv6 LAN IP(s)", metavar='')
+parser.add_argument("-r", "--router", help="Returns Router IP", metavar='')
+parser.add_argument("-r6","--router6", help="Returns IPv6 Router IP", metavar='')
+parser.add_argument("-d", "--dns", help="Returns DNS Nameserver", metavar='')  
+parser.add_argument("-m", "--mac", help="Returns MAC address for interface. Ex. eth0", metavar='')
+parser.add_argument("-g", "--geo", help="Returns Current IP Geodata", metavar='')
+parser.add_argument("-v", "--version", help="Returns Version", metavar='')
 
 args=parser.parse_args()                 

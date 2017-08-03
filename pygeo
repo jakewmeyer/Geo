@@ -1,25 +1,18 @@
 #!/usr/bin/env python3
 
-#
 # Python utility for getting specific network info
 # Author: Jake Meyer
 # Github: https://github.com/jakewmeyer
-#
 
-from optparse import OptionParser
+import argparse
 
-desc="""Example: pygeo -a 8.8.8.8 -o city,zip,isp                                                               
-Options: [all] [query] [city] [region] [country] [zip] [isp]"""
+parser = argparse.ArgumentParser(usage='pygeo -l => 10.6.5.23')
+parser.add_argument("-w","--wan", help="Returns WAN IP", metavar='')
+parser.add_argument("-l","--lan", help="Returns LAN IP(s)", metavar='')
+parser.add_argument("-r","--router", help="Returns Router IP", metavar='')
+parser.add_argument("-d","--dns", help="Returns DNS Nameserver", metavar='')  
+parser.add_argument("-m","--mac", help="Returns MAC address for interface. Ex. eth0", metavar='')
+parser.add_argument("-g","--geo", help="Returns Current IP Geodata", metavar='')
+parser.add_argument("-v","--version", help="Returns Version", metavar='')
 
-parser = OptionParser(usage='Usage: %prog [flag]', description=desc)
-parser.add_option("-w", "--wan", action="wan_search", help="Returns WAN IP")
-parser.add_option("-l", "--lan", action="lan_search", help="Returns LAN IP(s)")
-parser.add_option("-r", "--router", action="router_search", help="Returns Router IP")
-parser.add_option("-d", "--dns", action="dns_search", help="Returns DNS Nameserver")  
-parser.add_option("-m", "--mac", action="mac_search", help="Returns MAC address for interface. Ex. eth0")
-parser.add_option("-g", "--geo", action="geodata_search", default=True, help="Returns Current IP Geodata")
-parser.add_option("-o", "--option", action="specific_geo", default=True, help="[options] Returns Specific Geodata")
-parser.add_option("-a", "--address", action="store_false", default=True, help="[address] To specify IP for Geodata")
-parser.add_option("-v", "--version", action="store_false", default=True, help="Returns Version")
-
-(options, args) = parser.parse_args()
+args=parser.parse_args()                 
